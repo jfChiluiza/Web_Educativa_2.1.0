@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Básica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <style>
+        .navbar-custom {
+          background: linear-gradient(to right, #8a0273, #2d0463); /* encabezado Degradado morado a lila */
+        }
+      </style>
+      
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                Programación Básica
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#servicios">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="course-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">Programación Básica</h1>
+                    <p class="lead">Adquiere una comprensión profunda de la lógica y los fundamentos de la programación.</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://st4.depositphotos.com/1001941/22640/v/1600/depositphotos_226407720-stock-illustration-illustration-desktop-different-programming-language.jpg" alt="Programación" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        <!-- Videos Tutoriales -->
+        <section class="video-tutorials mb-5">
+            <h2 class="text-center mb-4">Tutoriales Interactivos en Video</h2>
+            <div class="row g-4">
+                <!-- Video Tutorial 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-card">
+                        <div class="video-thumbnail position-relative">
+                            <img src="https://i.ytimg.com/vi/chPhlsHoEPo/maxresdefault.jpg" alt="Python Tutorial" class="img-fluid rounded-top">
+                            <div class="play-button">
+                                <a href="https://www.youtube.com/watch?v=rfscVS0vtbw" class="video-link" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info p-3 bg-white rounded-bottom">
+                            <h5 class="mb-2">Python para Principiantes - Curso Completo</h5>
+                            <p class="text-muted mb-2">Aprende Python desde cero con ejercicios prácticos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Tutorial 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-card">
+                        <div class="video-thumbnail position-relative">
+                            <img src="https://i.ytimg.com/vi/0VhXKPy30N4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBXZiaahW5ZA_cvVVpQneUuv85GGA" alt="Python Ejercicios" class="img-fluid rounded-top">
+                            <div class="play-button">
+                                <a href="https://www.youtube.com/watch?v=kqtD5dpn9C8" class="video-link" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info p-3 bg-white rounded-bottom">
+                            <h5 class="mb-2">Ejercicios Prácticos de Python</h5>
+                            <p class="text-muted mb-2">Resuelve problemas reales con Python</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Tutorial 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-card">
+                        <div class="video-thumbnail position-relative">
+                            <img src="https://i.ytimg.com/vi/i6KKG3QbqCE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCqoLjyribMKUUTM8ywlTMvto7blw" alt="SQL Tutorial" class="img-fluid rounded-top">
+                            <div class="play-button">
+                                <a href="https://www.youtube.com/watch?v=HXV3zeQKqGY" class="video-link" data-bs-toggle="modal" data-bs-target="#videoModal3">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info p-3 bg-white rounded-bottom">
+                            <h5 class="mb-2">SQL para Principiantes</h5>
+                            <p class="text-muted mb-2">Fundamentos de bases de datos relacionales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contenido del curso -->
+        <section class="mb-5">
+            <h2 class="mb-4">Contenido</h2>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="accordion" id="courseContent">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#module1">
+                                    Módulo 1: Introducción a la programación
+                                </button>
+                            </h2>
+                            <div id="module1" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="fas fa-terminal text-info me-3"></i> ¿Qué es la programación?</li>
+                                        <li class="mb-2"><i class="fas fa-terminal text-info me-3"></i> Lógica de programación</li>
+                                        <li class="mb-2"><i class="fas fa-terminal text-info me-3"></i> Pseudocódigo</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .footer-custom {
+              background: linear-gradient(to right, #8a0273, #2d0463); /* Degradado morado a lila */
+            }
+          </style>
+          
+          <!-- Footer -->
+          <footer class="footer-custom text-white py-4">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-4 mb-3">
+                          <h5>La programación básica</h5>
+                          <p>Es el acto de escribir código para que las computadoras realicen tareas.</p>
+                      </div>
+                      
+                      <div class="col-md-4 mb-3">
+                          <h5>Enlaces Rápidos</h5>
+                          <ul class="list-unstyled">
+                              <li><a href="#inicio" class="text-white">Inicio</a></li>
+                              <li><a href="#servicios" class="text-white">Servicios</a></li>
+                              <li><a href="#newsletter" class="text-white">Suscríbete</a></li>
+                          </ul>
+                          
+                      </div>
+                      <div class="col-md-4 mb-3">
+                          <h5>Contacto</h5>
+                          <ul class="list-unstyled">
+                              <li><i class="fas fa-phone me-2"></i> +593 999 872 827</li>
+                          </ul>
+                      </div>
+                      <h5>Síguenos</h5>
+                      <ul class="list-inline">
+                          <li class="list-inline-item">
+                              <a href="https://www.facebook.com/FeRcHo.SK" target="_blank" class="text-white">
+                                  <i class="fab fa-facebook fa-2x"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a href="https://www.instagram.com/j.fhernando/" target="_blank" class="text-white">
+                                  <i class="fab fa-instagram fa-2x"></i>
+                              </a>
+                          </li>
+                          <li class="list-inline-item">
+                              <a href="https://wa.me/0999872827" target="_blank" class="text-white">
+                                  <i class="fab fa-whatsapp fa-2x"></i>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  
+                  <hr>
+                  <div class="text-center">
+                      <p class="mb-0">"La programación es como el sexo: Una vez que se hace bien, todo el mundo quiere saber cómo lo hiciste"</p>
+                  </div>
+                  
+              </div>
+          </footer>
+
+    <!-- Modales -->
+    <div class="modal fade" id="videoModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="videoModal2" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="videoModal3" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('.video-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const videoId = link.getAttribute('href').split('v=')[1];
+                const modal = document.querySelector(link.getAttribute('data-bs-target'));
+                const iframe = modal.querySelector('iframe');
+                iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
+            });
+        });
+
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('hidden.bs.modal', () => {
+                const iframe = modal.querySelector('iframe');
+                iframe.setAttribute('src', '');
+            });
+        });
+    </script>
+
+</body>
+</html> 

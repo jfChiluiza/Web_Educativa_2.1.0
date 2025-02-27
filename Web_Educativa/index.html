@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebEducativa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+        <style>
+        .navbar-custom {
+          background: linear-gradient(to right, #8a0273, #2d0463); /* encabezado Degradado morado a lila */
+        }
+      </style>
+      
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Jose Chiluiza
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#newsletter">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Soporte</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title display-3 fw-bold mb-4">Que Es Programacion?</h1>
+                        <p class="hero-description lead mb-4">
+                            La programación es el proceso de crear instrucciones para que una computadora ejecute tareas. 
+                            Se realiza mediante lenguajes como Python, Java o Kotlin. Utiliza algoritmos, estructuras de datos y lógica para resolver problemas. 
+                            Permite desarrollar aplicaciones, automatizar procesos y analizar datos. Es clave en la tecnología y la innovación digital.
+                        </p>
+                        
+                         </div> 
+        
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="hero-image-container">
+                        <img src="https://www.unir.net/wp-content/uploads/2024/02/La-importancia-de-la-programacion-segura-o-desarrollo-seguro-de-software.jpg" alt="" class="hero-floating-image">
+                        </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- seleccion de servicios -->
+    <section id="servicios" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold">Aprende más</h2>
+                <p class="lead text-muted">Descubre todos los cursos profesionales que ofrecemos.</p>
+                
+            </div>
+
+            <div class="row g-4">
+                <!-- Curso 1: Programación Básica -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card">
+                        <div class="card-top-img">
+                            <img src="https://st4.depositphotos.com/1001941/22640/v/1600/depositphotos_226407720-stock-illustration-illustration-desktop-different-programming-language.jpg" class="card-img-top" alt="Programación Básica">
+                            <div class="card-img-overlay">
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <i class="fas fa-laptop-code fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title fw-bold">Programación Básica</h5>
+                            <p class="card-text">Aprende a programar.</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li><i class="fas fa-terminal text-info me-3"></i>Lógica de programación</li>
+                                <li><i class="fas fa-terminal text-info me-3"></i>Estructuras de datos</li>
+                                <li><i class="fas fa-terminal text-info me-3"></i>Algoritmos básicos</li>
+                            </ul>
+                            <a href="pages/programacion_basica.html" class="btn btn-outline-primary w-100">Discover more</a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Curso 2: Desarrollo Web -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card">
+                        <div class="card-top-img">
+                            <img src="https://cms.rootstack.com/sites/default/files/inline-images/captura-de-pantalla-2023-08-02-a-la%28s%29-13.20.50.png" class="card-img-top" alt="Desarrollo Web">
+                            <div class="card-img-overlay">
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <i class="fas fa-code-branch fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title fw-bold">Desarrollo Web</h5>
+                            <p class="card-text">Crea sitios web modernos y responsivos.</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li><i class="fas fa-laptop-code me-3"></i>HTML5 y CSS3</li>
+                                <li><i class="fas fa-laptop-code me-3"></i>JavaScript moderno</li>
+                                <li><i class="fas fa-laptop-code me-3"></i>React y Node.js</li>
+                            </ul>
+                            <a href="pages/desarrollo_web.html" class="btn btn-outline-primary w-100">Discover more</a>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Curso 3: Bases de Datos -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card">
+                        <div class="card-top-img">
+                            <img src="https://www.nutanix.com/content/dam/nutanix-cxo/thumbnails/database_thumb.jpg" class="card-img-top" alt="Bases de Datos">
+                            <div class="card-img-overlay">
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <i class="fas fa-database fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title fw-bold">Bases de Datos</h5>
+                            <p class="card-text">Gestiona y optimiza bases de datos.</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li><i class="fas fa-database text-info me-3"></i>Node.Js</li>
+                                <li><i class="fas fa-database text-info me-3"></i>MongoDB</li>
+                                <li><i class="fas fa-database text-info me-3"></i>Optimización</li>
+                            </ul>
+                            <a href="pages/base_datos.html" class="btn btn-outline-primary w-100">Discover more</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Curso 4: Programación Estructurada y POO -->
+                <div class="col-lg-4 mb-4">
+                    <div class="service-card card h-100">
+                        <div class="card-top-img">
+                            <img src="https://i.imgur.com/aBlu9Gy.png" alt="Programación Estructurada" class="card-img-top">
+                            <div class="card-img-overlay">
+                                <span class="badge bg-primary">Fundamentos</span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Programación Estructurada y POO</h5>
+                            <p class="card-text">Aprende los fundamentos de la programación y la orientación a objetos.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-database text-info me-3"></i>Variables y tipos de datos</li>
+                                <li><i class="fas fa-database text-info me-3"></i>Estructuras de control</li>
+                                <li><i class="fas fa-database text-info me-3"></i>Clases y objetos</li>
+                                <li><i class="fas fa-database text-info me-3"></i>Herencia y polimorfismo</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <a href="pages/programacion-estructurada.html" class="btn btn-primary w-100">Discover more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Curso 5: Apps Móviles -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card">
+                        <div class="card-top-img">
+                            <img src="https://png.pngtree.com/background/20240413/original/pngtree-d-rendered-user-interface-optimization-for-mobile-app-development-and-mobile-picture-image_8477020.jpg" class="card-img-top" alt="Apps Móviles">
+                            <div class="card-img-overlay">
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title fw-bold">Apps Móviles</h5>
+                            <p class="card-text">Crea aplicaciones para iOS y Android.</p>
+                            <ul class="list-unstyled text-start mb-4">
+                                <li><i class="fas fa-mobile-alt me-3"></i>React Native</li>
+                                <li><i class="fas fa-mobile-alt me-3"></i>Flutter</li>
+                                <li><i class="fas fa-mobile-alt me-3"></i>Android Studio</li>
+                            </ul>
+                            <a href="pages/apps_moviles.html" class="btn btn-outline-primary w-100">Discover more</a>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Aquí agregamos el botón para ir a una página web -->
+            <a href="https://www.goconqr.com/es/cuestionario/9459788/test-de-programacion-basica" class="btn btn-primary" target="_blank">Test Aqui</a>
+            <!-- Aquí agregamos el botón para ir a una página web -->
+            <a href="https://www.testprogramacion.com/" class="btn btn-secondary" target="_blank">Test Aqui</a>
+            <!-- Aquí agregamos el botón para ir a una página web -->
+            <a href="https://retosdeprogramacion.com/ejercicios" class="btn btn-success" target="_blank">Test Aqui</a>
+        </div>
+        </div>
+    </section>
+    <!-- Después de la sección de servicios y antes del newsletter -->
+    <section class="video-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4 fw-bold">Video Tutorials</h2>
+                <p class="lead text-muted">Enhance your learning with our videos</p>
+                
+            </div>
+
+            <div class="row g-4">
+                <!-- Video 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-card">
+                        <div class="video-thumbnail position-relative">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="Curso Python Profesional" class="img-fluid rounded-top">
+                            <div class="play-button">
+                                <a href="https://www.youtube.com/watch?v=MJkdaVFHrto" class="video-link" data-bs-toggle="modal" data-bs-target="#videoModal1">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info p-3 bg-white rounded-bottom">
+                            <h5 class="mb-2">Aprende HTML</h5>
+                            <p class="text-muted mb-2">Aprende HTML para crear estructuras web básicas y dar formato a tus páginas en internet.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            
+                <!-- Video 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-card">
+                        <div class="video-thumbnail position-relative">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/19/23/00/css3-1841590_1280.png" alt="JavaScript Moderno" class="img-fluid rounded-top">
+                            <div class="play-button">
+                                <a href="https://www.youtube.com/watch?v=wZniZEbPAzk" class="video-link" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info p-3 bg-white rounded-bottom">
+                            <h5 class="mb-2">Aprende Css</h5>
+                            <p class="text-muted mb-2">Aprende CSS para diseñar y estilizar tus páginas web, controlando colores, fuentes y el layout para mejorar la experiencia del usuario.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Video 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="video-card">
+                        <div class="video-thumbnail position-relative">
+                            <img src="https://1000marcas.net/wp-content/uploads/2020/11/JavaScript-logo.jpg" alt="Desarrollo Mobile" class="img-fluid rounded-top">
+                            <div class="play-button">
+                                <a href="https://www.youtube.com/watch?v=QoC4RxNIs5M" class="video-link" data-bs-toggle="modal" data-bs-target="#videoModal3">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="video-info p-3 bg-white rounded-bottom">
+                            <h5 class="mb-2">Aprende JavaScript</h5>
+                            <p class="text-muted mb-2">JavaScript permite crear páginas web interactivas y dinámicas, mejorando la experiencia del usuario.</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modelo video 4 -->
+            <div class="modal fade" id="videoModal1" tabindex="-1" aria-labelledby="videoModalLabel1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="videoModalLabel1">Aprende HTML</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/MJkdaVFHrto" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modelo video 2 -->
+            <div class="modal fade" id="videoModal2" tabindex="-1" aria-labelledby="videoModalLabel2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="videoModalLabel2">Aprende CSS</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/wZniZEbPAzk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modelo video 3 -->
+            <div class="modal fade" id="videoModal3" tabindex="-1" aria-labelledby="videoModalLabel3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="videoModalLabel3">React Native Tutorial</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/z95mZVUcJ-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-4">Suscríbete</h2>
+                    <p class="mb-4">Se parte de esta nueva experiencia</p>
+                    <form action="https://formspree.io/f/xbldzrwo" method="POST" class="row g-3 justify-content-center">
+                        <div class="col-md-8">
+                            <input type="email" name="email" class="form-control form-control-lg" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <div class="col-md-auto">
+                            <button type="submit" class="btn btn-primary btn-lg">Suscribirse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .footer-custom {
+          background: linear-gradient(to right, #8a0273, #2d0463); /* Degradado morado a lila */
+        }
+      </style>
+      
+      <!-- Footer -->
+      <footer class="footer-custom text-white py-4">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4 mb-3">
+                      <h5>Jose Chiluiza</h5>
+                      <p>Una página educativa sobre programación que ofrece contenido claro y accesible para
+                          aprender desde conceptos básicos hasta avanzados. Ideal para quienes buscan mejorar 
+                          sus habilidades en desarrollo web y software.</p>
+                  </div>
+                  
+                  <div class="col-md-4 mb-3">
+                      <h5>Enlaces Rápidos</h5>
+                      <ul class="list-unstyled">
+                          <li><a href="#inicio" class="text-white">Inicio</a></li>
+                          <li><a href="#servicios" class="text-white">Servicios</a></li>
+                          <li><a href="#newsletter" class="text-white">Suscríbete</a></li>
+                      </ul>
+                      
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <h5>Contacto</h5>
+                      <ul class="list-unstyled">
+                          <li><i class="fas fa-phone me-2"></i> +593 999 872 827</li>
+                      </ul>
+                  </div>
+                  <h5>Síguenos</h5>
+                  <ul class="list-inline">
+                      <li class="list-inline-item">
+                          <a href="https://www.facebook.com/FeRcHo.SK" target="_blank" class="text-white">
+                              <i class="fab fa-facebook fa-2x"></i>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="https://www.instagram.com/j.fhernando/" target="_blank" class="text-white">
+                              <i class="fab fa-instagram fa-2x"></i>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="https://wa.me/0999872827" target="_blank" class="text-white">
+                              <i class="fab fa-whatsapp fa-2x"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              
+              <hr>
+              <div class="text-center">
+                  <p class="mb-0">"La programación es como el sexo: Una vez que se hace bien, todo el mundo quiere saber cómo lo hiciste"</p>
+              </div>
+              
+          </div>
+      </footer>
+      
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Modales para los videos -->
+    <div class="modal fade" id="videoModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="" title="YouTube video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Repetir para videoModal2 y videoModal3 -->
+    <script>
+        // Script para manejar los modales de video
+        document.querySelectorAll('.video-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const videoId = link.getAttribute('href').split('v=')[1];
+                const modal = document.querySelector(link.getAttribute('data-bs-target'));
+                const iframe = modal.querySelector('iframe');
+                iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
+            });
+        });
+
+        // Limpiar src del iframe cuando se cierra el modal
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('hidden.bs.modal', () => {
+                const iframe = modal.querySelector('iframe');
+                iframe.setAttribute('src', '');
+            });
+        });
+    </script>
+
+    <!-- Desplazamiento suave para todos los enlaces internos -->
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+            
+            if (section) {
+                const offsetTop = section.offsetTop - navbarHeight;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Para todos los enlaces internos
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const sectionId = this.getAttribute('href').substring(1);
+                    scrollToSection(sectionId);
+                });
+            });
+        });
+    </script>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const progressBars = document.querySelectorAll(".progress-bar");
+        
+            progressBars.forEach((bar) => {
+                bar.addEventListener("mouseover", function () {
+                    // Cambiar el ancho de la barra de progreso cuando se pasa el mouse
+                    const progress = bar.querySelector(".progress");
+                    progress.style.width = "100%"; // Establece el progreso al 100%
+                });
+        
+                bar.addEventListener("mouseleave", function () {
+                    // Restablecer el progreso al 0 cuando el mouse se quita
+                    const progress = bar.querySelector(".progress");
+                    progress.style.width = "0%"; // Restablece el progreso a 0
+                });
+            });
+        });
+        </script>
+        
+</body>
+</html>
+

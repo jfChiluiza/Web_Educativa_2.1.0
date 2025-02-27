@@ -1,0 +1,431 @@
+/* Estilos generales */
+:root {
+    --primary-color: #8a0273; /* color que es programacion*/
+    --secondary-color: #2d0463; /* color 2 que es programacion*/
+    --accent-color: #e74c3c;
+    --light-bg: #504b5076; /* color pie Suscribite*/
+    --dark-bg: #e00b0b;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos del navbar */
+.navbar {
+    box-shadow: 0 2px 10px rgb(175, 0, 166); /* sombra inicio */
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Hero section mejorado */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 0;
+    opacity: 0.1;
+}
+
+.hero-content {
+    color: white; /*Color QUe es programacion*/
+    padding: 2rem 0;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(233, 5, 5, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    margin-top: 2rem;
+}
+
+.btn-custom-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-custom-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.hero-stats {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(45deg, #fff, var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-text {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.hero-image-container {
+    position: relative;
+    height: 100%;
+}
+
+.hero-floating-image {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(230, 4, 238, 0.623); /* sombra Imagen que es programacion */
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-card {
+    position: absolute;
+    background: white;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    animation: float 5s ease-in-out infinite;
+}
+
+.floating-card i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.floating-card span {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.card-1 {
+    top: 20%;
+    left: 0;
+    animation-delay: 1s;
+}
+
+.card-2 {
+    bottom: 20%;
+    right: 0;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Media queries para responsividad */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+/* Estilos para la sección de servicios */
+.divider-custom {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    border: none;
+}
+
+.divider-custom .divider-custom-icon {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.service-card {
+    border: none;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.card-top-img {
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+}
+
+.card-top-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-img-overlay {
+    top: 1rem;
+    left: 1rem;
+    right: auto;
+    bottom: auto;
+    background: transparent;
+}
+
+.service-card .badge {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+}
+
+.service-card .card-body {
+    padding: 2rem;
+}
+
+.service-card .card-footer {
+    padding: 1rem 2rem;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.service-card .card-footer span {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.service-card ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Sección de newsletter */
+.newsletter-section {
+    background: var(--light-bg);
+    padding: 5rem 0;
+}
+
+/* Estilos para las páginas internas */
+.course-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;  /* color letra inicio */
+    padding: 4rem 0;
+    margin-bottom: 3rem;
+}
+
+.feature-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.progress-section {
+    background: var(--light-bg);
+    padding: 3rem 0;
+    margin: 3rem 0;
+}
+
+.tech-stack-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.tech-stack-item i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--secondary-color);
+}
+
+/* Botones personalizados */
+.btn-custom {
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-primary {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+}
+
+.btn-custom-primary:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Estilos para la sección de videos */
+.video-section {
+    background-color: var(--light-bg);
+}
+
+.video-card {
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.video-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.video-thumbnail {
+    overflow: hidden;
+}
+
+.video-thumbnail img {
+    transition: all 0.5s ease;
+}
+
+.video-card:hover .video-thumbnail img {
+    transform: scale(1.1);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: rgba(5, 5, 5, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.play-button i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.video-card:hover .play-button {
+    background: var(--primary-color);
+}
+
+.video-card:hover .play-button i {
+    color: white;
+}
+
+.video-duration {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.video-info {
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Estilos para el modal de video */
+.modal-content {
+    background: transparent;
+    border: none;
+}
+
+.modal-body {
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Estilos para el desplazamiento suave */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Ajustar según la altura de tu navbar */
+}
+
+.scroll-to {
+    cursor: pointer;
+}
+
+

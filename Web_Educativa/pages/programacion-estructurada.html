@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Estructurada & POO </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+     <<!-- Navbar -->
+    <style>
+        .navbar-custom {
+          background: linear-gradient(to right, #8a0273, #2d0463); /* encabezado Degradado morado a lila */
+        }
+      </style>
+      
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                Programación Estructurada & POO 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#servicios">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="course-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">Programación Estructurada & POO </h1>
+                    <p class="lead">Domina los fundamentos de la programación y la orientación a objetos</p>
+                </div>
+                <div class="col-lg-4">
+                    <img src="https://i.imgur.com/aBlu9Gy.png" alt="Bases de Datos" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        <!-- Después de la primera sección y antes del contenido del curso, agregar: -->
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Video Tutorial: Introducción a la Programación Estructurada</h3>
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <div class="video-container position-relative">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe 
+                                                src="https://www.youtube.com/embed/AEiRa5xZaZw"
+                                                title="Programación Estructurada" 
+                                                frameborder="0" 
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                                allowfullscreen>
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="video-description mt-4 mt-md-0">
+                                        <h5>En este video aprenderás:</h5>
+                                        <ul class="list-unstyled">
+                                            <li><i class="fas fa-check-circle text-success me-2"></i>Conceptos básicos</li>
+                                            <li><i class="fas fa-check-circle text-success me-2"></i>Estructuras de control</li>
+                                            <li><i class="fas fa-check-circle text-success me-2"></i>Ejemplos prácticos</li>
+                                            <li><i class="fas fa-check-circle text-success me-2"></i>Mejores prácticas</li>
+                                        </ul>
+                                        <div class="mt-3">
+                                            <span class="badge bg-primary me-2">
+                                                
+                                            </span>
+                                            <span class="badge bg-success">
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Para la sección de Variables -->
+        <div class="section-image mb-4">
+            <img src="https://i.imgur.com/aBlu9Gy.png" 
+                 alt="Variables en Programación" 
+                 class="img-fluid rounded shadow-sm"
+                 style="max-height: 300px; width: 100%; object-fit: cover;">
+            <div class="image-caption text-center text-muted mt-2">
+                Variables: Espacios de memoria para almacenar datos
+            </div>
+        </div>
+
+        <!-- Introducción a la Programación Estructurada -->
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">¿Qué es la Programación Estructurada?</h3>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p class="lead">La programación estructurada es un paradigma de programación que busca mejorar la claridad, calidad y tiempo de desarrollo utilizando únicamente tres estructuras básicas:</p>
+                                    <div class="mt-4">
+                                        <div class="d-flex align-items-start mb-3">
+                                            <div class="bg-primary text-white p-3 rounded-circle me-3">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </div>
+                                            <div>
+                                                <h5>Secuencia</h5>
+                                                <p>Ejecución de acciones una después de otra</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-start mb-3">
+                                            <div class="bg-success text-white p-3 rounded-circle me-3">
+                                                <i class="fas fa-code-branch"></i>
+                                            </div>
+                                            <div>
+                                                <h5>Selección</h5>
+                                                <p>Ejecución de una u otra acción según una condición (if-else)</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-start">
+                                            <div class="bg-info text-white p-3 rounded-circle me-3">
+                                                <i class="fas fa-redo"></i>
+                                            </div>
+                                            <div>
+                                                <h5>Iteración</h5>
+                                                <p>Repetición de una acción mientras se cumpla una condición (bucles)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card bg-light">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ejemplo Práctico</h5>
+                                            <pre class="bg-white p-3 rounded"><code>// Secuencia
+nombre = input("Tu nombre")
+edad = input("Tu edad")
+
+// Selección
+if edad >= 18:
+    print("Eres mayor de edad")
+else:
+    print("Eres menor de edad")
+
+// Iteración
+for i in range(3):
+    print("¡Hola " + nombre + "!")</code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <div class="alert alert-info">
+                                    <i class="fas fa-lightbulb me-2"></i>
+                                    <strong>Beneficios clave:</strong>
+                                    <ul class="mb-0 mt-2">
+                                        <li>Código más fácil de leer y mantener</li>
+                                        <li>Reducción de la complejidad del programa</li>
+                                        <li>Mayor facilidad para detectar y corregir errores</li>
+                                        <li>Base fundamental para aprender otros paradigmas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Para la sección de Tipos de Datos -->
+        <div class="section-image mb-4">
+            <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904" 
+                 alt="Tipos de Datos" 
+                 class="img-fluid rounded shadow-sm"
+                 style="max-height: 300px; width: 100%; object-fit: cover;">
+            <div class="image-caption text-center text-muted mt-2">
+                Diferentes tipos de datos en programación
+            </div>
+        </div>
+
+        <!-- Dentro de la sección de Tipos de Datos, después de la introducción -->
+        <div class="row mb-4">
+            <!-- Tipos Numéricos -->
+            <div class="col-md-6 mb-4">
+                <div class="section-image">
+                    <img src="https://images.unsplash.com/photo-1509228627152-72ae9ae6848d" 
+                         alt="Tipos Numéricos" 
+                         class="img-fluid rounded shadow-sm"
+                         style="max-height: 200px; width: 100%; object-fit: cover;">
+                    <div class="image-caption text-center text-muted mt-2">
+                        Números: Enteros y Decimales
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tipos de Texto -->
+            <div class="col-md-6 mb-4">
+                <div class="section-image">
+                    <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353" 
+                         alt="Tipos de Texto" 
+                         class="img-fluid rounded shadow-sm"
+                         style="max-height: 200px; width: 100%; object-fit: cover;">
+                    <div class="image-caption text-center text-muted mt-2">
+                        Texto: Caracteres y Cadenas
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tipos Booleanos -->
+            <div class="col-md-6 mb-4">
+                <div class="section-image">
+                    <img src="https://images.unsplash.com/photo-1555680202-c86f0e12f086" 
+                         alt="Tipos Booleanos" 
+                         class="img-fluid rounded shadow-sm"
+                         style="max-height: 200px; width: 100%; object-fit: cover;">
+                    <div class="image-caption text-center text-muted mt-2">
+                        Booleanos: Verdadero/Falso
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tipos Compuestos -->
+            <div class="col-md-6 mb-4">
+                <div class="section-image">
+                    <img src="https://images.unsplash.com/photo-1453733190371-0a9bedd82893" 
+                         alt="Tipos Compuestos" 
+                         class="img-fluid rounded shadow-sm"
+                         style="max-height: 200px; width: 100%; object-fit: cover;">
+                    <div class="image-caption text-center text-muted mt-2">
+                        Estructuras de Datos Compuestas
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido del curso -->
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Programación Estructurada -->
+                <section class="mb-5">
+                    <h2 class="mb-4">Programación Estructurada</h2>
+                    <div class="accordion" id="accordionEstructurada">
+                        <!-- Variables y Tipos de Datos -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#variables">
+                                    Variables y Tipos de Datos
+                                </button>
+                            </h2>
+                            <div id="variables" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <!-- Definición de Variables -->
+                                    <div class="mb-4">
+                                        <h5 class="border-bottom pb-2">¿Qué es una Variable?</h5>
+                                        <p>Una variable es un espacio en la memoria del computador que almacena datos que pueden cambiar durante la ejecución del programa. Podemos pensarla como una "caja" con un nombre, donde guardamos información.</p>
+                                        
+                                        <div class="alert alert-primary">
+                                            <strong>Características de las variables:</strong>
+                                            <ul class="mb-0 mt-2">
+                                                <li>Tienen un nombre único (identificador)</li>
+                                                <li>Almacenan un valor específico</li>
+                                                <li>Su contenido puede cambiar durante la ejecución</li>
+                                                <li>Tienen un tipo de dato asociado</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tipos de Variables -->
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-light">
+                                            <h5 class="mb-0">Tipos de Variables Básicos</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h6><i class="fas fa-cube text-primary me-2"></i>Números</h6>
+                                                    <div class="code-example bg-light p-3 rounded mb-3">
+                                                        <pre><code># Enteros (int)
+edad = 25
+cantidad = -10
+
+# Decimales (float)
+precio = 19.99
+temperatura = -3.5</code></pre>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h6><i class="fas fa-font text-primary me-2"></i>Texto (String)</h6>
+                                                    <div class="code-example bg-light p-3 rounded mb-3">
+                                                        <pre><code># Cadenas de texto
+nombre = "Ana"
+mensaje = 'Hola Mundo'
+direccion = "Calle Principal #123"</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h6><i class="fas fa-toggle-on text-primary me-2"></i>Booleanos</h6>
+                                                    <div class="code-example bg-light p-3 rounded mb-3">
+                                                        <pre><code># Valores verdadero/falso
+es_estudiante = True
+tiene_permiso = False</code></pre>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h6><i class="fas fa-list text-primary me-2"></i>Listas</h6>
+                                                    <div class="code-example bg-light p-3 rounded mb-3">
+                                                        <pre><code># Colecciones de datos
+notas = [85, 92, 78, 95]
+nombres = ["Juan", "Ana", "Carlos"]</code></pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplos Prácticos -->
+                                    <div class="card">
+                                        <div class="card-header bg-light">
+                                            <h5 class="mb-0">Ejemplos Prácticos</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="example-block bg-light p-3 rounded mb-3">
+                                                <h6 class="mb-3">Calculadora de Promedio</h6>
+                                                <pre><code># Declaración de variables
+nota1 = 85
+nota2 = 92
+nota3 = 78
+
+# Cálculo del promedio
+promedio = (nota1 + nota2 + nota3) / 3
+
+# Mostrar resultado
+print(f"El promedio es: {promedio}")</code></pre>
+                                            </div>
+
+                                            <div class="example-block bg-light p-3 rounded">
+                                                <h6 class="mb-3">Información Personal</h6>
+                                                <pre><code># Datos personales
+nombre = "María García"
+edad = 28
+altura = 1.65
+es_estudiante = True
+
+# Mostrar información
+print(f"Nombre: {nombre}")
+print(f"Edad: {edad} años")
+print(f"Altura: {altura} metros")
+print(f"¿Es estudiante? {es_estudiante}")</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tips y Buenas Prácticas -->
+                                    <div class="alert alert-info mt-4">
+                                        <h6 class="alert-heading"><i class="fas fa-lightbulb me-2"></i>Tips para nombrar variables:</h6>
+                                        <ul class="mb-0">
+                                            <li>Usa nombres descriptivos (ej: edad_usuario es mejor que e)</li>
+                                            <li>Comienza con letra minúscula</li>
+                                            <li>No uses espacios (usa guion bajo: nombre_completo)</li>
+                                            <li>Evita caracteres especiales y palabras reservadas</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agregar después del accordion de Variables y antes de Estructuras de Control -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tiposDatos">
+                                    Tipos de Datos en Programación
+                                </button>
+                            </h2>
+                            <div id="tiposDatos" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <!-- Introducción -->
+                                    <div class="mb-4">
+                                        <h5 class="border-bottom pb-2">¿Qué son los Tipos de Datos?</h5>
+                                        <p>Los tipos de datos definen el tipo de valor que puede almacenar una variable y las operaciones que se pueden realizar con ella. Cada tipo de dato ocupa un espacio diferente en memoria y tiene sus propias características.</p>
+                                    </div>
+
+                                    <!-- Tipos de Datos Principales -->
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-light">
+                                            <h5 class="mb-0">Tipos de Datos Fundamentales</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row g-4">
+                                                <!-- Números -->
+                                                <div class="col-md-6">
+                                                    <div class="border rounded p-3">
+                                                        <h6><i class="fas fa-hashtag text-primary me-2"></i>Tipos Numéricos</h6>
+                                                        <ul class="list-unstyled mb-3">
+                                                            <li><strong>int (enteros):</strong> -3, 0, 42</li>
+                                                            <li><strong>float (decimales):</strong> 3.14, -0.001</li>
+                                                            <li><strong>double (decimales precisos):</strong> 3.141592653589793</li>
+                                                        </ul>
+                                                        <div class="code-example bg-light p-2 rounded">
+                                                            <pre><code>edad = 25          # int
+peso = 68.5       # float
+pi = 3.14159265  # double</code></pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Texto -->
+                                                <div class="col-md-6">
+                                                    <div class="border rounded p-3">
+                                                        <h6><i class="fas fa-font text-primary me-2"></i>Tipos de Texto</h6>
+                                                        <ul class="list-unstyled mb-3">
+                                                            <li><strong>char (carácter):</strong> 'A', '1', '$'</li>
+                                                            <li><strong>string (cadena):</strong> "Hola Mundo"</li>
+                                                        </ul>
+                                                        <div class="code-example bg-light p-2 rounded">
+                                                            <pre><code>letra = 'A'           # char
+nombre = "Juan"      # string
+texto = '''Múltiples
+líneas'''           # string</code></pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Lógicos -->
+                                                <div class="col-md-6">
+                                                    <div class="border rounded p-3">
+                                                        <h6><i class="fas fa-check-circle text-primary me-2"></i>Tipos Lógicos</h6>
+                                                        <ul class="list-unstyled mb-3">
+                                                            <li><strong>boolean:</strong> True/False</li>
+                                                        </ul>
+                                                        <div class="code-example bg-light p-2 rounded">
+                                                            <pre><code>es_mayor = True
+tiene_permiso = False
+resultado = 5 > 3  # True</code></pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Compuestos -->
+                                                <div class="col-md-6">
+                                                    <div class="border rounded p-3">
+                                                        <h6><i class="fas fa-layer-group text-primary me-2"></i>Tipos Compuestos</h6>
+                                                        <ul class="list-unstyled mb-3">
+                                                            <li><strong>list:</strong> [1, 2, 3]</li>
+                                                            <li><strong>tuple:</strong> (1, 2, 3)</li>
+                                                            <li><strong>dict:</strong> {"clave": "valor"}</li>
+                                                        </ul>
+                                                        <div class="code-example bg-light p-2 rounded">
+                                                            <pre><code>lista = [1, 2, 3]
+tupla = (1, "dos", True)
+diccionario = {"nombre": "Ana"}</code></pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Conversión de Tipos -->
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-light">
+                                            <h5 class="mb-0">Conversión entre Tipos de Datos</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="example-block bg-light p-3 rounded">
+                                                <h6 class="mb-3">Ejemplos de Conversión</h6>
+                                                <pre><code># Conversión de string a int
+edad_texto = "25"
+edad_numero = int(edad_texto)    # 25
+
+# Conversión de número a string
+precio = 19.99
+precio_texto = str(precio)       # "19.99"
+
+# Conversión a boolean
+numero = 1
+booleano = bool(numero)         # True
+
+# Conversión entre tipos numéricos
+decimal = float(5)              # 5.0
+entero = int(5.7)              # 5</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tips y Consideraciones -->
+                                    <div class="alert alert-warning mt-4">
+                                        <h6 class="alert-heading"><i class="fas fa-exclamation-triangle me-2"></i>Consideraciones Importantes:</h6>
+                                        <ul class="mb-0">
+                                            <li>Cada tipo de dato tiene sus propias operaciones permitidas</li>
+                                            <li>La conversión entre tipos puede causar pérdida de datos</li>
+                                            <li>No todos los tipos son compatibles para conversión directa</li>
+                                            <li>Es importante validar antes de realizar conversiones</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Estructuras de Control -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#control">
+                                    Estructuras de Control
+                                </button>
+                            </h2>
+                            <div id="control" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <!-- Para la sección de Estructuras de Control -->
+                                    <div class="section-image mb-4">
+                                        <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6" 
+                                             alt="Estructuras de Control" 
+                                             class="img-fluid rounded shadow-sm"
+                                             style="max-height: 300px; width: 100%; object-fit: cover;">
+                                        <div class="image-caption text-center text-muted mt-2">
+                                            Flujo de control en programación
+                                        </div>
+                                    </div>
+
+                                    <!-- Introducción -->
+                                    <div class="mb-4">
+                                        <h5 class="border-bottom pb-2">¿Qué son las Estructuras de Control?</h5>
+                                        <p>Las estructuras de control son herramientas que nos permiten controlar el flujo de ejecución de un programa, permitiéndonos tomar decisiones y repetir acciones según ciertas condiciones.</p>
+                                    </div>
+
+                                    <!-- Estructuras Condicionales -->
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-light">
+                                            <h5 class="mb-0"><i class="fas fa-code-branch text-primary me-2"></i>Estructuras Condicionales</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <!-- If-Else -->
+                                            <div class="mb-4">
+                                                <h6 class="mb-3">If-Else</h6>
+                                                <div class="code-example bg-light p-3 rounded">
+                                                    <pre><code>edad = 18
+
+if edad >= 18:
+    print("Eres mayor de edad")
+elif edad >= 13:
+    print("Eres adolescente")
+else:
+    print("Eres menor de edad")</code></pre>
+                                                </div>
+                                            </div>
+
+                                            <!-- Switch/Match -->
+                                            <div class="mb-4">
+                                                <h6 class="mb-3">Switch/Match (Python 3.10+)</h6>
+                                                <div class="code-example bg-light p-3 rounded">
+                                                    <pre><code>dia = "lunes"
+
+match dia:
+    case "lunes":
+        print("Inicio de semana")
+    case "viernes":
+        print("¡Fin de semana!")
+    case _:
+        print("Día entre semana")</code></pre>
+                                                </div>
+                                            </div>
+
+                                            <!-- Operador Ternario -->
+                                            <div>
+                                                <h6 class="mb-3">Operador Ternario</h6>
+                                                <div class="code-example bg-light p-3 rounded">
+                                                    <pre><code># Forma tradicional
+resultado = "Aprobado" if nota >= 60 else "Reprobado"</code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Estructuras de Repetición -->
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-light">
+                                            <h5 class="mb-0"><i class="fas fa-sync text-primary me-2"></i>Estructuras de Repetición</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <!-- For -->
+                                            <div class="mb-4">
+                                                <h6 class="mb-3">Bucle For</h6>
+                                                <div class="code-example bg-light p-3 rounded">
+                                                    <pre><code># Iteración sobre rango
+for i in range(5):
+    print(i)  # Imprime 0,1,2,3,4
+
+# Iteración sobre lista
+frutas = ["manzana", "pera", "uva"]
+for fruta in frutas:
+    print(fruta)</code></pre>
+                                                </div>
+                                            </div>
+
+                                            <!-- While -->
+                                            <div>
+                                                <h6 class="mb-3">Bucle While</h6>
+                                                <div class="code-example bg-light p-3 rounded">
+                                                    <pre><code>contador = 5
+while contador > 0:
+    print(contador)
+    contador -= 1</code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplos Prácticos -->
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-light">
+                                            <h5 class="mb-0"><i class="fas fa-laptop-code text-primary me-2"></i>Ejemplos Prácticos</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="example-block bg-light p-3 rounded mb-3">
+                                                <h6 class="mb-3">Calculadora Simple</h6>
+                                                <pre><code>operacion = input("Operación (+,-,*,/): ")
+num1 = float(input("Primer número: "))
+num2 = float(input("Segundo número: "))
+
+match operacion:
+    case "+":
+        resultado = num1 + num2
+    case "-":
+        resultado = num1 - num2
+    case "*":
+        resultado = num1 * num2
+    case "/":
+        if num2 != 0:
+            resultado = num1 / num2
+        else:
+            resultado = "Error: División por cero"
+    case _:
+        resultado = "Operación no válida"
+
+print(f"Resultado: {resultado}")</code></pre>
+                                            </div>
+
+                                            <div class="example-block bg-light p-3 rounded">
+                                                <h6 class="mb-3">Juego de Adivinanza</h6>
+                                                <pre><code>numero_secreto = 42
+intentos = 0
+
+while True:
+    intento = int(input("Adivina el número (1-100): "))
+    intentos += 1
+    
+    if intento == numero_secreto:
+        print(f"¡Correcto! Lo lograste en {intentos} intentos")
+        break
+    elif intento < numero_secreto:
+        print("El número es mayor")
+    else:
+        print("El número es menor")</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tips y Buenas Prácticas -->
+                                    <div class="alert alert-info">
+                                        <h6 class="alert-heading"><i class="fas fa-lightbulb me-2"></i>Buenas Prácticas:</h6>
+                                        <ul class="mb-0">
+                                            <li>Usa nombres descriptivos para las variables de control</li>
+                                            <li>Evita anidar demasiados niveles de condicionales</li>
+                                            <li>Incluye siempre una condición de salida en bucles while</li>
+                                            <li>Considera usar 'break' y 'continue' cuando sea necesario</li>
+                                            <li>Mantén el código dentro de los bloques simple y legible</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Para la sección de Bucles -->
+                <div class="section-image mb-4">
+                    <img src="https://images.unsplash.com/photo-1492619375914-88005aa9e8fb" 
+                         alt="Bucles en Programación" 
+                         class="img-fluid rounded shadow-sm"
+                         style="max-height: 300px; width: 100%; object-fit: cover;">
+                    <div class="image-caption text-center text-muted mt-2">
+                        Estructuras repetitivas en programación
+                    </div>
+                </div>
+
+                <!-- POO -->
+                <section class="mb-5">
+                    <h2 class="mb-4">Programación Orientada a Objetos</h2>
+                    <div class="section-image mb-4">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" 
+                             alt="Programación Orientada a Objetos" 
+                             class="img-fluid rounded shadow-sm"
+                             style="max-height: 300px; width: 100%; object-fit: cover;">
+                        <div class="image-caption text-center text-muted mt-2">
+                            Programación Orientada a Objetos: Clases y Objetos
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionPOO">
+                        <!-- Clases y Objetos -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#clases">
+                                    Clases y Objetos
+                                </button>
+                            </h2>
+                            <div id="clases" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <!-- Imagen ilustrativa -->
+                                    <div class="section-image mb-4">
+                                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5" 
+                                             alt="Clases y Objetos en POO" 
+                                             class="img-fluid rounded shadow-sm"
+                                             style="max-height: 250px; width: 100%; object-fit: cover;">
+                                        <div class="image-caption text-center text-muted mt-2">
+                                            Clases y Objetos: Bloques fundamentales de la POO
+                                        </div>
+                                    </div>
+
+                                    <!-- Definición -->
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-light">
+                                            <h5 class="mb-0">¿Qué son las Clases y Objetos?</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h6><i class="fas fa-cube text-primary me-2"></i>Clase</h6>
+                                                    <p>Una clase es una plantilla o molde que define las propiedades (atributos) y comportamientos (métodos) que tendrán los objetos de ese tipo. Es como un plano para crear objetos.</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <h6><i class="fas fa-boxes text-primary me-2"></i>Objeto</h6>
+                                                    <p>Un objeto es una instancia de una clase. Es una entidad concreta creada a partir de la plantilla (clase) que tiene sus propios valores para los atributos definidos.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplos Prácticos -->
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-light">
+                                            <h5 class="mb-0">Ejemplos Prácticos</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <!-- Ejemplo 1: Clase Coche -->
+                                            <div class="example-block bg-light p-3 rounded mb-3">
+                                                <h6 class="mb-3">Ejemplo: Clase Coche</h6>
+                                                <pre><code class="language-python"># Definición de la clase Coche
+class Coche:
+    # Constructor: se ejecuta al crear un nuevo objeto Coche
+    # Inicializa los atributos básicos del coche
+    def __init__(self, marca, modelo, año):
+        # Atributos del coche
+        self.marca = marca      # Marca del coche (ej: Toyota)
+        self.modelo = modelo    # Modelo del coche (ej: Corolla)
+        self.año = año         # Año de fabricación
+        self.encendido = False # Estado del motor (apagado por defecto)
+    
+    # Método para encender el coche
+    # Cambia el estado del coche a encendido y retorna un mensaje
+    def encender(self):
+        self.encendido = True
+        return f"{self.marca} {self.modelo} encendido"
+    
+    # Método para obtener la información del coche
+    # Retorna un string con los detalles principales
+    def info(self):
+        return f"Coche {self.marca} {self.modelo} ({self.año})"
+
+# Creación de objetos (instancias) de la clase Coche
+mi_coche = Coche("Toyota", "Corolla", 2022)    # Primer coche
+otro_coche = Coche("Honda", "Civic", 2023)     # Segundo coche
+
+# Uso de los métodos del objeto
+print(mi_coche.info())      # Muestra: Coche Toyota Corolla (2022)
+print(mi_coche.encender())  # Muestra: Toyota Corolla encendido</code></pre>
+                                            </div>
+
+                                            <!-- Ejemplo 2: Clase Cuenta Bancaria -->
+                                            <div class="example-block bg-light p-3 rounded">
+                                                <h6 class="mb-3">Ejemplo: Cuenta Bancaria</h6>
+                                                <pre><code class="language-python"># Definición de la clase CuentaBancaria
+class CuentaBancaria:
+    # Constructor: inicializa una nueva cuenta bancaria
+    # Parámetros:
+    # - titular: nombre del dueño de la cuenta
+    # - saldo: cantidad inicial (opcional, por defecto 0)
+    def __init__(self, titular, saldo=0):
+        self.titular = titular  # Nombre del titular de la cuenta
+        self.saldo = saldo     # Saldo actual de la cuenta
+    
+    # Método para depositar dinero en la cuenta
+    # Parámetros:
+    # - cantidad: monto a depositar
+    # Retorna: mensaje con el nuevo saldo
+    def depositar(self, cantidad):
+        self.saldo += cantidad  # Aumenta el saldo
+        return f"Depósito de ${cantidad}. Nuevo saldo: ${self.saldo}"
+    
+    # Método para retirar dinero de la cuenta
+    # Parámetros:
+    # - cantidad: monto a retirar
+    # Retorna: mensaje de éxito o error si no hay suficiente saldo
+    def retirar(self, cantidad):
+        # Verifica si hay suficiente saldo
+        if cantidad <= self.saldo:
+            self.saldo -= cantidad  # Reduce el saldo
+            return f"Retiro de ${cantidad}. Nuevo saldo: ${self.saldo}"
+        return "Saldo insuficiente"
+
+# Ejemplo de uso de la clase
+# Crear una nueva cuenta con saldo inicial de $1000
+cuenta = CuentaBancaria("Juan Pérez", 1000)
+
+# Realizar operaciones en la cuenta
+print(cuenta.depositar(500))  # Depositar $500
+print(cuenta.retirar(200))    # Retirar $200</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Tips y Buenas Prácticas -->
+                                    <div class="alert alert-info">
+                                        <h6 class="alert-heading"><i class="fas fa-lightbulb me-2"></i>Buenas Prácticas:</h6>
+                                        <ul class="mb-0">
+                                            <li>Los nombres de las clases deben comenzar con mayúscula</li>
+                                            <li>Cada clase debe tener una única responsabilidad</li>
+                                            <li>Utiliza métodos para modificar los atributos (encapsulamiento)</li>
+                                            <li>Documenta tus clases y métodos</li>
+                                            <li>Mantén las clases cohesivas y con bajo acoplamiento</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agregar antes de la definición de Herencia -->
+                        <div class="section-image mb-4">
+                            <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea" 
+                                 alt="Herencia en POO" 
+                                 class="img-fluid rounded shadow-sm"
+                                 style="max-height: 300px; width: 100%; object-fit: cover;">
+                            <div class="image-caption text-center text-muted mt-2">
+                                Herencia: Relación entre clases padre e hijas
+                            </div>
+                        </div>
+
+                        <!-- Agregar imágenes de ejemplo para cada concepto -->
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <div class="section-image">
+                                    <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55" 
+                                         alt="Ejemplo de Herencia" 
+                                         class="img-fluid rounded shadow-sm"
+                                         style="max-height: 200px; width: 100%; object-fit: cover;">
+                                    <div class="image-caption text-center text-muted mt-2">
+                                        Ejemplo: Jerarquía de vehículos
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="section-image">
+                                    <img src="https://images.unsplash.com/photo-1582921017967-79d1cb6702ee" 
+                                         alt="Ejemplo de Polimorfismo" 
+                                         class="img-fluid rounded shadow-sm"
+                                         style="max-height: 200px; width: 100%; object-fit: cover;">
+                                    <div class="image-caption text-center text-muted mt-2">
+                                        Ejemplo: Figuras geométricas
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Herencia -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#herencia">
+                                    Herencia
+                                </button>
+                            </h2>
+                            <div id="herencia" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <!-- Imagen de Herencia -->
+                                    <div class="section-image mb-4">
+                                        <img src="https://images.unsplash.com/photo-1608389168343-ba8aa0cb3a63" 
+                                             alt="Concepto de Herencia en POO" 
+                                             class="img-fluid rounded shadow-sm"
+                                             style="max-height: 300px; width: 100%; object-fit: cover;">
+                                        <div class="image-caption text-center text-muted mt-2">
+                                            <i class="fas fa-sitemap me-2"></i>
+                                            Herencia: Estructura jerárquica de clases en programación
+                                        </div>
+                                    </div>
+
+                                    <!-- Diagrama visual de Herencia -->
+                                    <div class="card mb-4">
+                                        <div class="card-body text-center">
+                                            <div class="inheritance-diagram p-3">
+                                                <div class="parent-class mb-4">
+                                                    <div class="class-box bg-primary text-white p-3 rounded">
+                                                        <h6>Clase Padre (Vehículo)</h6>
+                                                        <small>Atributos y métodos base</small>
+                                                    </div>
+                                                </div>
+                                                <div class="child-classes row justify-content-center">
+                                                    <div class="col-md-5">
+                                                        <div class="class-box bg-success text-white p-3 rounded">
+                                                            <h6>Clase Hija (Coche)</h6>
+                                                            <small>Hereda de Vehículo</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <div class="class-box bg-info text-white p-3 rounded">
+                                                            <h6>Clase Hija (Motocicleta)</h6>
+                                                            <small>Hereda de Vehículo</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Definición de Herencia -->
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-light">
+                                            <h5 class="mb-0">¿Qué es la Herencia?</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>La herencia es un mecanismo que permite crear nuevas clases basadas en clases existentes, heredando sus atributos y métodos. Esto permite:</p>
+                                            <ul>
+                                                <li>Reutilización de código</li>
+                                                <li>Establecer jerarquías de clases</li>
+                                                <li>Extender funcionalidades existentes</li>
+                                                <li>Crear código más mantenible</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplo Práctico de Herencia -->
+                                    <div class="example-block bg-light p-3 rounded mb-3">
+                                        <h6 class="mb-3">Ejemplo: Jerarquía de Vehículos</h6>
+                                        <pre><code class="language-python"># Clase base (padre)
+class Vehiculo:
+    def __init__(self, marca, modelo, año):
+        self.marca = marca
+        self.modelo = modelo
+        self.año = año
+        self.encendido = False
+    
+    def encender(self):
+        self.encendido = True
+        return f"{self.marca} {self.modelo} encendido"
+    
+    def info(self):
+        return f"Vehículo {self.marca} {self.modelo} ({self.año})"
+
+# Clase derivada (hijo)
+class Coche(Vehiculo):
+    def __init__(self, marca, modelo, año, num_puertas):
+        # Llamada al constructor de la clase padre
+        super().__init__(marca, modelo, año)
+        self.num_puertas = num_puertas
+        self.velocidad = 0
+    
+    def acelerar(self, kmh):
+        if self.encendido:
+            self.velocidad += kmh
+            return f"Acelerando a {self.velocidad} km/h"
+        return "Primero debes encender el coche"
+
+# Otra clase derivada
+class Motocicleta(Vehiculo):
+    def __init__(self, marca, modelo, año, tipo):
+        super().__init__(marca, modelo, año)
+        self.tipo = tipo
+        self.caballete_puesto = False
+    
+    def poner_caballete(self):
+        self.caballete_puesto = True
+        return "Caballete puesto"
+
+# Uso de las clases
+mi_coche = Coche("Toyota", "Corolla", 2022, 4)
+mi_moto = Motocicleta("Honda", "CBR", 2023, "Deportiva")
+
+# Usando métodos heredados
+print(mi_coche.encender())  # Método heredado
+print(mi_coche.acelerar(50))  # Método propio
+
+print(mi_moto.info())  # Método heredado
+print(mi_moto.poner_caballete())  # Método propio</code></pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Polimorfismo -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#polimorfismo">
+                                    Polimorfismo
+                                </button>
+                            </h2>
+                            <div id="polimorfismo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <!-- Imagen principal del polimorfismo -->
+                                    <div class="section-image mb-4">
+                                        <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e" 
+                                             alt="Polimorfismo en POO" 
+                                             class="img-fluid rounded shadow-sm"
+                                             style="max-height: 300px; width: 100%; object-fit: cover;">
+                                        <div class="image-caption text-center text-muted mt-2">
+                                            <i class="fas fa-random me-2"></i>
+                                            Polimorfismo: Diferentes formas de un mismo comportamiento
+                                        </div>
+                                    </div>
+
+                                    <!-- Ejemplos visuales de polimorfismo -->
+                                    <div class="row g-4 mb-4">
+                                        <div class="col-md-6">
+                                            <div class="section-image">
+                                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" 
+                                                     alt="Ejemplo de Polimorfismo: Interfaces" 
+                                                     class="img-fluid rounded shadow-sm"
+                                                     style="max-height: 200px; width: 100%; object-fit: cover;">
+                                                <div class="image-caption text-center text-muted mt-2">
+                                                    Interfaces comunes, implementaciones diferentes
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="section-image">
+                                                <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1" 
+                                                     alt="Ejemplo de Polimorfismo: Métodos" 
+                                                     class="img-fluid rounded shadow-sm"
+                                                     style="max-height: 200px; width: 100%; object-fit: cover;">
+                                                <div class="image-caption text-center text-muted mt-2">
+                                                    Múltiples comportamientos, misma interfaz
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Definición de Polimorfismo -->
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-light">
+                                            <h5 class="mb-0">¿Qué es el Polimorfismo?</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>El polimorfismo es la capacidad de un objeto para tomar diferentes formas. Permite que:</p>
+                                            <ul>
+                                                <li>Diferentes objetos respondan al mismo método de diferentes maneras</li>
+                                                <li>Se puedan tratar objetos de diferentes clases de manera uniforme</li>
+                                                <li>El código sea más flexible y reutilizable</li>
+                                                <li>Se implementen interfaces comunes con comportamientos específicos</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Agregar después de la definición de Polimorfismo -->
+                                    <div class="example-block bg-light p-3 rounded mb-4">
+                                        <h6 class="mb-3">Ejemplo Práctico: Sistema de Empleados</h6>
+                                        <pre><code class="language-python"># Clase base para todos los empleados
+class Empleado:
+    def __init__(self, nombre, id):
+        self.nombre = nombre
+        self.id = id
+    
+    def calcular_salario(self):
+        # Método que será sobrescrito por las clases hijas
+        pass
+    
+    def obtener_rol(self):
+        # Método que será sobrescrito por las clases hijas
+        pass
+    
+    def info(self):
+        return f"Empleado: {self.nombre} (ID: {self.id})"
+
+# Clase para empleados con salario fijo
+class EmpleadoFijo(Empleado):
+    def __init__(self, nombre, id, salario_mensual):
+        super().__init__(nombre, id)
+        self.salario_mensual = salario_mensual
+    
+    def calcular_salario(self):
+        return self.salario_mensual
+    
+    def obtener_rol(self):
+        return "Empleado Fijo"
+
+# Clase para empleados por horas
+class EmpleadoPorHoras(Empleado):
+    def __init__(self, nombre, id, horas_trabajadas, tarifa_por_hora):
+        super().__init__(nombre, id)
+        self.horas_trabajadas = horas_trabajadas
+        self.tarifa_por_hora = tarifa_por_hora
+    
+    def calcular_salario(self):
+        return self.horas_trabajadas * self.tarifa_por_hora
+    
+    def obtener_rol(self):
+        return "Empleado Por Horas"
+
+# Clase para vendedores con comisión
+class Vendedor(Empleado):
+    def __init__(self, nombre, id, ventas_totales, porcentaje_comision):
+        super().__init__(nombre, id)
+        self.ventas_totales = ventas_totales
+        self.porcentaje_comision = porcentaje_comision
+    
+    def calcular_salario(self):
+        return self.ventas_totales * (self.porcentaje_comision / 100)
+    
+    def obtener_rol(self):
+        return "Vendedor"
+
+# Función que demuestra el polimorfismo
+def mostrar_detalles_empleado(empleado):
+    print(f"\nDetalles de {empleado.obtener_rol()}:")
+    print(empleado.info())
+    print(f"Salario: ${empleado.calcular_salario():.2f}")
+
+# Crear diferentes tipos de empleados
+empleados = [
+    EmpleadoFijo("Juan Pérez", "E001", 3000),
+    EmpleadoPorHoras("Ana García", "E002", 120, 15),
+    Vendedor("Carlos López", "E003", 50000, 10)
+]
+
+# Procesar todos los empleados de manera uniforme
+for empleado in empleados:
+    mostrar_detalles_empleado(empleado)
+
+# Calcular nómina total
+nomina_total = sum(emp.calcular_salario() for emp in empleados)
+print(f"\nNómina total: ${nomina_total:.2f}")
+
+# Ejemplo de salida:
+"""
+Detalles de Empleado Fijo:
+Empleado: Juan Pérez (ID: E001)
+Salario: $3000.00
+
+Detalles de Empleado Por Horas:
+Empleado: Ana García (ID: E002)
+Salario: $1800.00
+
+Detalles de Vendedor:
+Empleado: Carlos López (ID: E003)
+Salario: $5000.00
+
+Nómina total: $9800.00
+"""</code></pre>
+                                    </div>
+
+                                    <!-- Agregar explicación del ejemplo -->
+                                    <div class="card mb-4">
+                                        <div class="card-header bg-light">
+                                            <h5 class="mb-0">Explicación del Polimorfismo en el Ejemplo</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <h6><i class="fas fa-code-branch text-primary me-2"></i>Clase Base</h6>
+                                                    <p>La clase <code>Empleado</code> define la interfaz común con métodos que todas las clases hijas deben implementar.</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6><i class="fas fa-layer-group text-primary me-2"></i>Clases Derivadas</h6>
+                                                    <p>Cada tipo de empleado implementa los métodos de manera diferente según sus necesidades específicas.</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6><i class="fas fa-random text-primary me-2"></i>Polimorfismo en Acción</h6>
+                                                    <p>La función <code>mostrar_detalles_empleado()</code> trabaja con cualquier tipo de empleado sin necesidad de saber su clase específica.</p>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h6><i class="fas fa-list text-primary me-2"></i>Tratamiento Uniforme</h6>
+                                                    <p>Podemos procesar una lista de diferentes tipos de empleados de manera uniforme, demostrando la flexibilidad del polimorfismo.</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Recursos Adicionales</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <i class="fas fa-book text-primary me-2"></i>
+                                <a href="#" class="text-decoration-none">Material de estudio</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-code text-primary me-2"></i>
+                                <a href="#" class="text-decoration-none">Ejercicios prácticos</a>
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-video text-primary me-2"></i>
+                                <a href="#" class="text-decoration-none">Videotutoriales</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <style>
+        .footer-custom {
+          background: linear-gradient(to right, #8a0273, #2d0463); /* Degradado morado a lila */
+        }
+      </style>
+      
+      <!-- Footer -->
+      <footer class="footer-custom text-white py-4">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4 mb-3">
+                      <h5>Base de Datos</h5>
+                      <p>Es un sistema organizado para almacenar, gestionar y recuperar datos de manera eficiente.</p>
+                  </div>
+                  
+                  <div class="col-md-4 mb-3">
+                      <h5>Enlaces Rápidos</h5>
+                      <ul class="list-unstyled">
+                          <li><a href="#inicio" class="text-white">Inicio</a></li>
+                          <li><a href="#servicios" class="text-white">Servicios</a></li>
+                          <li><a href="#newsletter" class="text-white">Suscríbete</a></li>
+                      </ul>
+                      
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <h5>Contacto</h5>
+                      <ul class="list-unstyled">
+                          <li><i class="fas fa-phone me-2"></i> +593 999 872 827</li>
+                      </ul>
+                  </div>
+                  <h5>Síguenos</h5>
+                  <ul class="list-inline">
+                      <li class="list-inline-item">
+                          <a href="https://www.facebook.com/FeRcHo.SK" target="_blank" class="text-white">
+                              <i class="fab fa-facebook fa-2x"></i>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="https://www.instagram.com/j.fhernando/" target="_blank" class="text-white">
+                              <i class="fab fa-instagram fa-2x"></i>
+                          </a>
+                      </li>
+                      <li class="list-inline-item">
+                          <a href="https://wa.me/0999872827" target="_blank" class="text-white">
+                              <i class="fab fa-whatsapp fa-2x"></i>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              
+              <hr>
+            <div class="text-center">
+                <p class="mb-0">"La programación es como el sexo: Una vez que se hace bien, todo el mundo quiere saber cómo lo hiciste"</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
